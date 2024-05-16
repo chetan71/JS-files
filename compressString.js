@@ -1,13 +1,20 @@
-let s = "abbbccd";
+let s = `sssssssgggggggvvvvvvvcccmmjjjjuuuuuudpppppphhhhh`;
+let nstr = "";
 
-for (let i = 0; i < s.length; i++) {
-    let com = s[i];
-    console.log();
-    for (let j = 0; j < s.length; j++) {
-        if (s[j]==com) {
-            count++;
-        }else break;
-        
+for (let j=0; j< s.length; j++) {
+    let count = 0;
+    if (s[j]==s[j-1]){
+        continue;
     }
-    
+    nstr += s[j];
+    for (let i = j; i < s.length; i++) {
+        if (s[i]==s[j]) {
+            count++;
+        }
+        else break;
+    }
+    if (count !== 1){
+        nstr +=count.toString();
+    }
 }
+console.log(nstr);
