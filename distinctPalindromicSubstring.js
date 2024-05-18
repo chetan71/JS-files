@@ -3,7 +3,7 @@
  a string. */
  // A lexicographic order means Alphabetic order
  //Chetan Bhange
- let s = "abcbca";
+ let s = "tfzchqecdnbawmiufficftjcycbitzaibepaohhchpfizkxjvp";
 const arr = [];
 const palinArr = [];
 
