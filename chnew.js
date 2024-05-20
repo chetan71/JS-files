@@ -4,3 +4,4 @@ let acc= "umzaidubpklsupgjhvdodwosubwbyzrspeylyrkfhoxyvntdpozvxzyjsuixijskvyvngl
 if (my == acc) {
     console.log(true);
 }else console.log(false);
+console.log("S"+2);
