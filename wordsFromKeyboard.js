@@ -13,22 +13,29 @@ function areAllElementSame (row){
     return true;
 }
 
-function getRowNo(ch) {
-    if (row1.includes(ch)){
-        return 1;
-    }else if (row2.includes(ch)) {
-        return 2;
-    }else if (row3.includes(ch)) {
-        return 3;
-}
-    } 
+// function getRowNo(ch) {
+//     if (row1.includes(ch)){
+//         return 1;
+//     }else if (row2.includes(ch)) {
+//         return 2;
+//     }else if (row3.includes(ch)) {
+//         return 3;   
+//     }
+// } 
 
 for (let i = 0; i < arr.length; i++) {
     const row = [];
     for (const j of arr[i]) {
-        row.push(getRowNo(j));
+        if (row1.includes(j)){
+            row.push(1);
+        }else if (row2.includes(j)) {
+            row.push(2);
+        }else if (row3.includes(j)) {
+            row.push(3);
+        }
     }
     first = row[0];
+    
     if (areAllElementSame(row)) {
         rowNoArr.push(arr[i]);
     }
