@@ -1,6 +1,7 @@
-let my = "undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined";
-let acc= "umzaidubpklsupgjhvdodwosubwbyzrspeylyrkfhoxyvntdpozvxzyjsuixijskvyvnglyxoqosnrhulyyqkhvkghtnjluamuvdtbrvswdioealeubqpoasfeqnjprcytcwlsrdtaocxtpdokgeogmvcumcquvodiqeasccihykbywlxqssxqkwpdjczyphbjryqttmaskasfqmkituqowdrjnhavooqefenjkbtbmhofzuifufjpvcyeccrzcyvqlmzqgiqmvxlrfyxyvxalbwatybqegajlhxntwzbetqjovowatntdtvulwmndqpgoljkakjvtrdoakxatgalhmfpozfeiemjakxcfgekkiyoydymmehhmauyqgnqadjfuezogikgpmzqgfelpnbnavconzfcsfeonirauycmpdmilguwacdxmipmxkalmnshg";
+let s = "1321,3213,424,124";
+function arrayGenerator(s) {
+    return "[" + s.split(",").join(", ") + "]";
+}
+let arr = arrayGenerator(s);
+console.log(typeof(arr));
 
-if (my == acc) {
-    console.log(true);
-}else console.log(false);

@@ -1,0 +1,17 @@
+Selection Sort:- (we find min value in every position then swap 
+					after finding true min.)
+	In selection sort, first we check min value
+with every element and find min value from start to 
+end, then that min value will get swap. As such, now
+ that initial value is sorted. then we reduce the length 
+ or we neglect swapped initial value & next value becomes
+  initial. then this process continues until array gets sorted.
+
+Bubble Sort:- (we find max value between 2 then swap immediately)
+	In Bubble sort, we check initial value is greater then 
+	next value. if TRUE, then its gets swapped else next value
+	gets picked. then same happens next value gets checked is 
+	it smaller than pervious(we can also change to smaller. But
+	IMP point is Bigger value gets pushed back until it reach end.
+	then end part become sorted and length is reduced & process 
+	continues until array gets sorted.
