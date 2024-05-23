@@ -1,17 +1,10 @@
-let str = "IAmAJavaProgrammer";
-const sArr = [];
-let chStr = "";
+let s = "IAmAJavaProgrammer";
 
-for (let i = 0; i < str.length; i++) {
-    chStr += str[i];
+for (let i = 0; i < s.length; i++) {
+    sArr[i] = s[i];
 
-    if (i === str.length - 1 || str[i+1] === str[i+1].toUpperCase()) {
-        sArr.push(chStr);
-        chStr = "";
+    if (s[i]==s[i].toUpperCase()) {
+        
     }
-}
-
-console.log(sArr);
-for (const iterator of sArr) {
-    console.log(iterator);
+    
 }

@@ -35,4 +35,4 @@ function smallestGreaterElements(arr) {
         minSmGt.push(Math.min(...smGt));
     }
     return minSmGt;
-}
+} 
