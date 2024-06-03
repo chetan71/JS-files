@@ -1,20 +1,8 @@
-function nthEvenFibonacci(n) {
-    let a = 0,
-        b = 2; // Initialize the first two even Fibonacci numbers
-    const MOD = 1000000007; // Modulo value
-
-    for (let i = 3; i <= n; i++) {
-        let temp = a + b; // Calculate the next Fibonacci number
-        a = b;
-        b = temp;
-        if (i % 3 === 0) {
-            b = (b * 4) % MOD; // Multiply the third number in each triplet by 4
-        }
-    }
-
-    return b;
+function NthEvenFibonacci(n) {
+    //Write your code here
+    if (n < 1)
+        return n;
+    if (n == 1)
+        return 2;
+    return ((4 * NthEvenFibonacci(n - 1)) % 1000000007 + NthEvenFibonacci(n - 2) % 1000000007) % 1000000007;
 }
-
-// Example usage:
-const n = 18;
-console.log(`The ${n}th Even Fibonacci number is: ${nthEvenFibonacci(n)}`);
