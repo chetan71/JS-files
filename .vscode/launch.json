@@ -1,13 +1,22 @@
 {
     "configurations": [
-        
         {
-            "name": "Attach to Chrome",
-            "port": 9222,
+            "name": "Attach",
+            "port": 9229,
             "request": "attach",
-            "type": "chrome",
-            "webRoot": "${""C:\\Users\\DCN_ADMIN\\Documents\\JS_files\\.vscode\\launch.json""}"
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
         },
+        
+        // {
+        //     "name": "Attach to Chrome",
+        //     "port": 9222,
+        //     "request": "attach",
+        //     "type": "chrome",
+        //     "webRoot": "${""C:\\Users\\DCN_ADMIN\\Documents\\JS_files\\.vscode\\launch.json""}"
+        // },
         {
             "type": "pwa-msedge",
             "name": "Launch Microsoft Edge",
